@@ -9,6 +9,8 @@ cron.schedule("0 0 1 * *", async () => {
   } catch (err) {
     console.error("Error calculating productivity:", err);
   }
+
+  console.log("Scheduler started");
 });
 
 // Keep the Node.js process running

@@ -2,13 +2,13 @@ const express = require("express");
 const router = express.Router();
 
 //Getting the Leave
-router.get("/", getLeave);
+router.get("/leave", getLeave);
 
 //adding Leaving
-router.post("/:id", addTask);
+router.post("/leave/:id", addTask);
 
 //Updating the Leave
-router.patch("/:id", updateLeave);
+router.patch("/leave/:id", updateLeave);
 
 //deleting a Leave
-router.delete("/:id", deleteLeave);
+router.delete("/leave/:id", deleteLeave);
