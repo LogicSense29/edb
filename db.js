@@ -6,7 +6,7 @@ const database_name = `${process.env.DATABASE}`;
 
 const db = new pg.Client({
   user: "postgres",
-  host: "localhost",
+  host: "localhost" || "35.160.120.126",
   database: database_name,
   password: password,
   port: 5432,
